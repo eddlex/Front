@@ -1,0 +1,760 @@
+@font-face {
+    font-family: 'HelveticaNeueLTPro-Roman';
+    src: url('/Home/fonts/HelveticaNeueLTPro-Roman.eot');
+    src: local('☺'), url('fonts/HelveticaNeueLTPro-Roman.woff') format('woff'), url('fonts/HelveticaNeueLTPro-Roman.ttf') format('truetype'), url('fonts/HelveticaNeueLTPro-Roman.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('fonts/8143.eot');
+    src: local('☺'), url('fonts/8143.woff') format('woff'), url('fonts/8143.ttf') format('truetype'), url('fonts/8143.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/3966.eot');
+    src: local('☺'), url('fonts/3966.woff') format('woff'), url('fonts/3966.ttf') format('truetype'), url('fonts/3966.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTPro-Md';
+    src: url('fonts/HelveticaNeueLTPro-Md.eot');
+    src: local('☺'), url('fonts/HelveticaNeueLTPro-Md.woff') format('woff'), url('fonts/HelveticaNeueLTPro-Md.ttf') format('truetype'), url('fonts/HelveticaNeueLTPro-Md.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "myriad pro";
+    src: url('fonts/Merriweather-LightItalic.eot');
+    src: local('☺'), url('fonts/Merriweather-LightItalic.woff') format('woff'), url('fonts/Merriweather-LightItalic.ttf') format('truetype'), url('fonts/Merriweather-LightItalic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTPro-Lt';
+    src: url('fonts/HelveticaNeueLTPro-Lt.eot');
+    src: local('☺'), url('fonts/HelveticaNeueLTPro-Lt.woff') format('woff'), url('fonts/HelveticaNeueLTPro-Lt.ttf') format('truetype'), url('fonts/HelveticaNeueLTPro-Lt.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+body *{
+    margin: 0 0 ;
+    padding: 0 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+  display: grid;
+    grid-template-columns: 1fr repeat(12,0.5fr) 1fr;
+    grid-gap: 10px;
+    overflow: hidden;
+
+
+}
+.header,.aside{
+     grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr repeat(12,0.5fr) 1fr;
+
+
+}
+.headerHead, .asideBody{
+grid-column: 4/12;
+
+}
+.headerHead ul{
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.headerHead li{
+    list-style:  none;
+}
+.headerHead a{
+    text-decoration: none;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.headerHead a:hover{
+    color: black;
+
+}
+.headerBody {
+    grid-column:4/12 ;
+
+    margin-top:300px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerBody h2{
+font-size: 44px;
+    font-family: 'HelveticaNeueLTPro-Lt',serif;
+}
+.headerBody p{
+    font-size: 16px;
+    color: grey;
+    font-family: 'myriad-pro', serif;
+    font-style: normal;
+}
+#forMore{
+    font-size: 13px;
+    border: 1px solid black;
+    background-color: white;
+    width: 186px;
+    height: 55px;
+    margin: 50px 0;
+    font-family: 'myriad-pro',serif;
+    transition: 0.5s;
+
+}
+#forMore:hover{
+    background-color: black;
+    color: white;
+}
+.headerBody >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 0 0 100px 0;
+}
+
+.circle{
+    height: 20px;
+    width: 20px;
+    background-color: #808080;
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+#circle1:hover,#circle2:hover, #circle3:hover{
+opacity: 1;
+}
+#circle1{
+    opacity: 0.2;
+}
+#circle2{
+    opacity: 0.4;
+}
+#circle3{
+    opacity: 0.6;
+}
+.aside{
+    background-color:#1d1d1d;
+    position: relative;
+
+}
+.whiteColumn{
+    height: 100%;
+    width: 15px;
+    background-color: #fff;
+    position: absolute;
+    left:50%;
+    margin-left: -9px;
+
+}
+.circleSmall{
+
+    border: 15px  solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(29, 29, 29);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left:50%;
+    margin-left: -30px;
+
+
+}
+.circleSmall:first-child{
+    margin-top: 150px;
+}
+.circleSmall:nth-child(2){
+    margin-top: 270px;
+}
+.circleSmallTree{
+    margin-top: 645px;
+}
+.circleLarg{
+    border-width: 15px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(29, 29, 29);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left:50%;
+    margin-left: -40px;
+    margin-top: 475px;
+}
+
+.asideBody{
+    grid-column:4/12 ;
+
+    background-color: #1d1d1d;
+    margin-top: 150px;
+}
+.asideBody > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.asideBody h2{
+    text-align: right;
+    font-size: 48px;
+    font-family: "HelveticaNeueLTPro" ,sans-serif;
+    color: rgb(254, 254, 254);
+
+}
+.asideBody p{
+
+    font-size: 15px;
+
+    font-family: "myriad pro",sans-serif;
+    color: rgb(183, 183, 183);
+    margin-top: 10px;
+
+
+}
+
+
+
+.boxTwo{
+    margin-top: 120px;
+
+}
+.boxTwo1{
+    margin-top: 200px;
+
+}
+
+.box,.boxTwo{
+    max-width: 600px;
+}
+.box1Plus{
+    margin-top: 100px;
+}
+
+.boxTwo {
+    padding-left: 50px;
+}
+.box {
+    padding-right: 50px;
+}
+.fonBulding{
+    grid-column: 1/-1;
+    width:100%;
+
+    margin-top: 200px ;
+    position: relative;
+
+
+}
+
+
+
+  .fonBulding  >object {
+   width: 100%;
+
+
+}
+.fonBulding > object:first-child{
+     margin-top: 30px;
+     position: absolute;
+ }
+
+.ourTeam{
+    grid-column: 4/12;
+    margin:  50px auto;
+}
+.ourTeam  h2{
+    font-size: 34px;
+    font-family: "myriad pro",sans-serif;
+    color: rgb(29, 30, 31);
+    line-height: 0.765;
+    text-align: center;
+}
+
+
+
+
+
+.ourTeam p{
+    font-size: 16px;
+    font-family: "Merriweather",sans-serif;
+    color: rgb(137, 136, 136);
+    font-style: italic;
+    line-height: 1.625;
+    text-align: center;
+  margin-top: 5px;
+}
+.person{
+    grid-column: 4/12;
+    margin:  auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+
+
+}
+.allPersons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.allPersons:hover i{
+    color: black;
+
+}
+.about,.socialikon{
+    margin-top: 30px;
+    text-align: center;
+}
+.about h2{
+
+    font-size: 24px;
+    font-family: "myriad pro",serif;
+    color: rgb(70, 70, 70);
+    line-height: 1.083;
+    text-align: center;
+
+}
+.about p{
+
+    font-size: 13px;
+    font-family: "Myriad Pro",serif;
+    color: rgb(179, 179, 179);
+    line-height: 2;
+    text-align: center;
+
+}
+
+
+
+
+.socialikon i{
+    color:grey;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.Mark{
+    margin-top:250px;
+}
+.Provide{
+    grid-column: 1/-1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr repeat(12,0.5fr) 1fr;
+    background: url("img/ProvideBackground.svg ")  0 0/cover  no-repeat;
+
+
+
+}
+.Provide  div:first-of-type{
+margin: 300px 0;
+    grid-column: 1/-1;
+}
+.Provide h2 {
+    font-size: 34px;
+    font-family: "myriad-pro",sans-serif;
+
+    line-height: 0.765;
+    text-align: center;
+    color: white;
+}
+
+
+.Provide p{
+    font-size: 16px;
+    font-family: "myriad-pro",sans-serif;
+    color: rgb(137, 136, 136);
+    font-style: italic;
+    line-height: 1.625;
+    text-align: center;
+    margin-top: 5px;
+}
+.obsh object{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+
+.cards{
+
+   grid-column: 1/-1;
+    margin: -250px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+
+
+
+}
+
+
+
+
+
+.analiticDiv {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -280px;
+}
+
+.analitic{
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.analitic i{
+    color: white;
+}
+
+.analiticDiv h3{
+     margin-top: -260px;
+    font-size: 26px;
+  font-family: "Myriad Pro",sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: center;
+
+}
+
+.analiticDiv h4 {
+    font-size: 18px;
+    font-family: "HelveticaNeueLTPro-Lt",sans-serif;
+    color: rgb(56, 56, 56);
+    line-height: 1.278;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.post{
+    grid-column: 1/-1;
+    margin-top: -500px ;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+
+}
+.post button{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 217px;
+    height: 64px;
+    top:200px;
+    border:1px solid silver;
+    transition: 0.5s;
+
+}
+.post button a{
+    text-decoration: none;
+    font-family: "HelveticaNeueLTPro-Md",sans-serif;
+    color: black;
+    background-color: #fff;
+    font-weight:bold;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.post button:hover{
+    background-color: rgb(24, 24, 24);
+    border:1px solid white;
+
+}
+.post button:hover a{
+    color: white;
+    background-color: rgb(24, 24, 24);
+}
+.post object{
+    margin-top: -450px;
+
+
+}
+.ContactUS {
+    grid-column: 1/-1;
+margin: auto;
+    padding-top: 150px;
+}
+.ContactUS >div{
+    text-align: center;
+}
+.ContactUS h2{
+
+    font-size: 34px;
+    font-family: "myriad pro",sans-serif;
+    color: rgb(29, 30, 31);
+    line-height: 0.765;
+    text-align: center;
+
+}
+
+.ContactUS p {
+    font-size: 16px;
+    font-family: "myriad mro",sans-serif;
+    color: rgb(137, 136, 136);
+    line-height: 1.625;
+    text-align: center;
+
+}
+.contactIkon{
+    grid-column: 4/12;
+padding-top: 60px ;
+
+  display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.contactIkon >div {
+text-align: center;
+    padding: 0 10px 0 10px;
+}
+.contactIkon i{
+    transition: 0.5s;
+}
+.contactIkon i:hover{
+    color: grey;
+}
+.contactIkon p{
+
+    font-size: 12px;
+    font-family: "Myriad Pro",sans-serif;
+    color: rgb(137, 136, 136);
+    line-height: 2.167;
+}
+
+.inputList{
+    grid-column: 4/12;
+    display: flex;
+    flex-direction: column;
+    margin-top: 154px;
+}
+
+.inputList input{
+    border: 1px  solid rgb(153, 153, 153);
+    border-left: none ;
+    border-right: none ;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 15px;
+
+}
+#message{
+    text-align: start;
+    padding-bottom:  140px;
+    padding-left: 10px;
+    height: 193px;
+
+}
+.inputList button {
+    transition: 0.5s;
+    margin-top: 15px;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 52px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: "HelveticaNeueLTPro-Md",sans-serif;
+}
+.inputList button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.footer{
+    grid-column: 1/-1;
+    margin-top: 154px;
+    padding-bottom: 50px;
+
+}
+.footer p{
+    font-size: 14px;
+    font-family: "myriad pro",sans-serif;
+    color: rgb(59, 59, 59);
+    line-height: 1.857;
+    text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .headerHead{
+      grid-column: 1/-1;
+  }
+    .headerHead ul{
+      justify-content: space-around;
+    }
+    .fonBulding  >object {
+        width: auto;
+    }
+}
+
+
+@media (min-width: 769px) {
+   #burger{
+       display: none;
+   }
+}
+@media (max-width: 768px){
+ .headerHead{
+     grid-column: 1/-1;
+
+ }
+.headerHead ul > a{
+ display: none;
+}
+#burger{
+    position: fixed;
+    z-index: 40;
+}
+
+.headerHead ul{
+    position: fixed;
+    display: block;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width:100%;
+    margin-left: -9999px;
+    z-index: 40;
+}
+.headerHead li{
+    padding: 10px 0 10px 5px;
+    transition: 0.5s;
+
+}
+    .headerHead li:hover{
+        background-color: grey;
+    }
+
+    .headerHead li:hover a{
+        color: white;
+    }
+
+.asideBody{
+    grid-column: 1/-1;
+}
+.box{
+    padding-left: 10px;
+}
+.boxTwo{
+    padding-left: 20px;
+}
+.cards{
+    height: 1800px;
+}
+.analiticDiv:nth-child(2){
+    position: absolute;
+    margin-top:  -250px;
+}
+.analiticDiv:nth-child(3){
+    position: absolute;
+    margin-top: 50px;
+
+}
+    .analiticDiv:nth-child(4){
+position: absolute;
+        margin-top: 350px;
+    }
+
+
+ .person{
+     grid-column: 1/-1;
+ }
+}
+
+@media (max-width: 729px) {
+    .contactIkon div:last-child{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 546px){
+.person{
+    flex-wrap: wrap;
+
+}
+    .Mark{
+        margin: auto;
+        padding: 0 20px 0 20px;
+    }
+    .Justin{
+        margin: auto;
+        padding: 0 20px 0 20px;
+    }
+}
+@media (max-width: 464px) {
+    .contactIkon div:nth-child(2){
+        margin-top: 20px;
+    }
+}
+@media (max-width: 433px){
+.Mark:last-child{
+    margin-top :30px;
+}
+    .Justin{
+        margin-top :30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

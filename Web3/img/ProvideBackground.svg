@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1664" viewBox="0 0 1920 1664">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #181818;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Services_Background" data-name="Services Background" class="cls-1" d="M0,3212.13l1920-202.12V4471.88L0,4674V3212.13Z" transform="translate(0 -3010)"/>
+</svg>
